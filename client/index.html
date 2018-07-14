@@ -1,0 +1,51 @@
+<html ng-app='timeSheetApp'>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="arjuntp" />
+	<title>times.in</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+	<!--<link rel="stylesheet" href="css/mainCss.css" rel="stylesheet"/>-->
+	<script src="../lib/jquery/dist/jquery.min.js"></script>
+	<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../lib/angular/angular.min.js"></script>
+	<script src="../lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<script src="index.js"></script>
+	<script src="app.js"></script>
+
+	<script src="../main/index.js"></script>
+	<script src="../main/js/mainController.js"></script>
+
+	<!--<script src="../reserve/index.js"></script>-->
+	<!--<script src="../reserve/js/reserveController.js"></script>-->
+</head>
+<body class="container" >
+<nav class="navbar navbar-default row">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<ul class="nav navbar-nav ">
+				<li class="col-xs-3"><a ui-sref="app.home"><b>Reservation</b></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--<div class="container-fluid">-->
+		<!--<div class="navbar-header">-->
+			<!--<ul class="nav navbar-nav ">-->
+				<!--<li class="col-xs-3"><a ui-sref="app.reserve">Add-Reservation</a></li>-->
+			<!--</ul>-->
+		<!--</div>-->
+	<!--</div>-->
+</nav>
+
+
+<div class="row">
+	<div>
+		<div class="well" ui-view></div>
+	</div>
+</div>
+<ng-include src="'layouts/footer.html'"></ng-include>
+</body>
+</html>
